@@ -56,6 +56,38 @@
     <button id="Register">Click Me</button>
   </section>
 
+     <section id="Register" class="page hidden">
+    <form method="POST">
+       <label for="name">NAME:</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your username"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+
+        <p>Select the <bold>EVENTS</bold> you wanna join</p>
+        <input type="checkbox" id="event1" name="events" value="conference">
+        <label for="event1">Annual Music Conference</label><br>
+
+        <input type="checkbox" id="event2" name="events" value="workshop">
+        <label for="event2">Musical Workshop</label><br>
+
+        <input type="checkbox" id="event3" name="events" value="Perfromance">
+        <label for="event3">Musical performances</label><br>
+
+        <input type="checkbox" id="event4" name="events" value="Sing">
+        <label for="event4">Sing with your heart</label><br><br>
+        <button id="Done">Submit</button>
+
+
+    </form>
+   </section>
+
+   <section id="Done" class="page hidden">
+    <h1>Thank you for regestering</h1>
+    <button id="homepage">← Back to Home</button>
+  
+  </section>
+
   <footer>
     <p>© <span id="footerYear"></span> Mediumish Blog</p>
   </footer>
@@ -64,3 +96,4 @@
 </body>
 
 </html>
+
