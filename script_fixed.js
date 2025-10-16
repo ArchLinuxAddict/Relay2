@@ -4,22 +4,22 @@ const aboutLink = document.getElementById('aboutLink');
 const musicLink = document.getElementById('musicLink');
 const backBtn = document.getElementById('backBtn');
 const yearEl = document.getElementById('footerYear');
-const register = document.getElementById('Register');
-const done = document.getElementById('Done');
+const register = document.getElementById('Registration');
+const done = document.getElementById('Finish');
 
 
 const articles = [
   {
     title: "The Art of Simplicity",
-    content: "<p>Simplicity is the ultimate sophistication...</p>"
+    content: "<p>Simplicity is the ultimate sophistication... As the more simple it is the better you are at the world and its not easy for anyone to live in this world with complexity, so choose simplicity</p>"
   },
   {
     title: "Focus in a Distracted World",
-    content: "<p>In a world filled with noise, true focus is rare...</p>"
+    content: "<p>In a world filled with noise, true focus is rare... Focus can be done with the help of Music and heart love dedication and that what makes us unique....</p>"
   },
   {
     title: "Designing Without Color",
-    content: "<p>Sometimes grayscale can speak louder than colors...</p>"
+    content: "<p>Sometimes grayscale can speak louder than colors... We must let out heart design our life and be colourful within and that whats the main thing we have to do in this life</p>"
   }
 ]
 
@@ -49,3 +49,4 @@ function openArticle(index) {
   showPage('articlePage');
 
 }
+
