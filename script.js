@@ -3,6 +3,7 @@ const homepage = document.getElementById('homepage');
 const aboutLink = document.getElementById('aboutlink');
 const backBtn = document.getElementById('backBtn');
 const yearEl = document.getElementById('footerYear');
+const music = document.getElementById('music');
 
 const articles = [
   {
@@ -33,6 +34,7 @@ function showPage(id) {
 hompepage.onclick = () => showPage('homePage');
 aboutLink.onclick = () => showPage('aboutlink');
 backBtn.onclick = () => showPage('homePage');
+music.onclick = () => showPage('music');
 
 function openArticle(index) {
   const article = articles[index];
@@ -40,4 +42,5 @@ function openArticle(index) {
   content.innerHTML = `<h2>${article.title}</h2>${article.content}`;
   showPage('articlePage');
 }
+
 
