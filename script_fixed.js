@@ -4,6 +4,9 @@ const aboutLink = document.getElementById('aboutLink');
 const musicLink = document.getElementById('musicLink');
 const backBtn = document.getElementById('backBtn');
 const yearEl = document.getElementById('footerYear');
+const register = document.getElementById('Register');
+const done = document.getElementById('Done');
+
 
 const articles = [
   {
@@ -35,10 +38,14 @@ homeLink.onclick = () => showPage('homePage');
 aboutLink.onclick = () => showPage('aboutPage');
 musicLink.onclick = () => showPage('musicPage');
 backBtn.onclick = () => showPage('homePage');
+register.onclick = () => showPage('Register');
+done.onclick = () => showPage('Done');
+
 
 function openArticle(index) {
   const article = articles[index];
   const content = document.getElementById('articleContent');
   content.innerHTML = `<h2>${article.title}</h2>${article.content}`;
   showPage('articlePage');
+
 }
