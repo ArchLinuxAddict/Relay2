@@ -1,6 +1,6 @@
 const pages = document.querySelectorAll('.page');
-const homeLink = document.getElementById('homeLink');
-const aboutLink = document.getElementById('aboutLink');
+const homepage = document.getElementById('homepage');
+const aboutLink = document.getElementById('aboutlink');
 const backBtn = document.getElementById('backBtn');
 const yearEl = document.getElementById('footerYear');
 
@@ -30,8 +30,8 @@ function showPage(id) {
   document.getElementById(id).style.visibility = 'visible';
 }
 
-homeLink.onclick = () => showPage('homePage');
-aboutLink.onclick = () => showPage('aboutPage');
+hompepage.onclick = () => showPage('homePage');
+aboutLink.onclick = () => showPage('aboutlink');
 backBtn.onclick = () => showPage('homePage');
 
 function openArticle(index) {
@@ -40,3 +40,4 @@ function openArticle(index) {
   content.innerHTML = `<h2>${article.title}</h2>${article.content}`;
   showPage('articlePage');
 }
+
